@@ -1,0 +1,94 @@
+body.menu1 {
+  background-image: url(../img/bg-PC.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.menu2 {
+  background-image: url(../img/bg2-lg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.64);
+}
+.menu-main {
+  padding: 1rem 0;
+}
+.accordion-flush {
+  background-color: none;
+  --bs-accordion-color: #fff !important;
+  --bs-accordion-bg: transparent !important;
+  --bs-accordion-border-color: none !important;
+}
+
+.accordion-item {
+  margin: 0.5rem 0;
+}
+
+.accordion-img {
+  height: 4rem;
+  width: auto;
+}
+.category-name {
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.accordion-button {
+  border: 1px solid white !important;
+  background: rgba(255, 255, 255, 0.913) !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem !important;
+}
+.accordion-button::after {
+  margin-left: 0px !important;
+}
+.overflowX-auto {
+  overflow-x: auto !important;
+}
+.menuItem {
+  width: 17rem;
+  min-width: 15rem !important;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  .bgOpacity {
+    background-color: #c5bfa0dd;
+  }
+  body.menu1 {
+    background: url(../img/bg-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-attachment: fixed;
+  }
+  body.menu2 {
+    background: url(../img/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .menuItem {
+    width: 15rem;
+    min-width: 12rem !important;
+  }
+}
+.menu__restaurantDetails {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+.menu__restaurantDetails-info {
+  width: 100%;
+  margin: 2rem 0;
+}

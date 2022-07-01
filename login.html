@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <h3 class="text-center text-light mt-4">
+        Login or Signup as a restaurant owner
+      </h3>
+      <div class="form-modal">
+        <div class="form-toggle">
+          <button id="login-toggle" onclick="toggleLogin()">log in</button>
+          <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+        </div>
+
+        <div id="login-form">
+          <form>
+            <input type="text" placeholder="Enter email or username" />
+            <input type="password" placeholder="Enter password" />
+            <button type="button" class="btn login">
+              <a href="admin/index.html" class="text-light d-bloc w-100 h-100"
+                >Login</a
+              >
+            </button>
+            <p><a href="admin/pages-forget.html">Forgotten account</a></p>
+            <hr />
+            <button type="button" class="btn -box-sd-effect">
+              <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign in with
+              google
+            </button>
+          </form>
+        </div>
+
+        <div id="signup-form">
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <input type="text" placeholder="Choose username" />
+            <input type="password" placeholder="Create password" />
+            <button type="button" class="btn signup">create account</button>
+            <p>
+              Clicking <strong>create account</strong> means that you are agree
+              to our <a href="javascript:void(0)">terms of services</a>.
+            </p>
+            <hr />
+            <button type="button" class="btn -box-sd-effect">
+              <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign up with
+              google
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2837c82e13.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleSignup() {
+        document.getElementById("login-toggle").style.backgroundColor = "#fff";
+        document.getElementById("login-toggle").style.color = "#222";
+        document.getElementById("signup-toggle").style.backgroundColor =
+          "#57b846";
+        document.getElementById("signup-toggle").style.color = "#fff";
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("signup-form").style.display = "block";
+      }
+
+      function toggleLogin() {
+        document.getElementById("login-toggle").style.backgroundColor =
+          "#57B846";
+        document.getElementById("login-toggle").style.color = "#fff";
+        document.getElementById("signup-toggle").style.backgroundColor = "#fff";
+        document.getElementById("signup-toggle").style.color = "#222";
+        document.getElementById("signup-form").style.display = "none";
+        document.getElementById("login-form").style.display = "block";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
